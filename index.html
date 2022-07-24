@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wake</title>
+    <link rel="shortcut icon" type="icon" href="favicon/favicon.ico">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <style>
+      *{
+        margin: 0;
+        font-family: monospace;
+        box-sizing: border-box;
+        overflow: hidden;
+
+
+      }
+      .background {
+        background-image: url("images/backgroundtemplate.jpg");
+        background-color: #555652;
+        background-blend-mode: multiply;
+        height: 100%;
+        width: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        z-index: 0;
+      }
+
+      .logo {
+        background-color: #FFD700;
+        display: flex;
+        justify-content: space-evenly;
+        object-fit: scale-down;
+        top: 39%;
+        left: 45%;
+        width: 8.4%;
+        height: 21.7%;
+        position: absolute;
+        border-radius: 100%;
+        border: 0.5vw solid #005C46;
+        z-index: 2;
+      }
+
+      a.buttons {
+        position: absolute;
+        padding-top: 0.5em;
+        height: 8%;
+        width: 9%;
+        display: table-cell;
+        background-color: #FFD700;
+        color: black;
+        font-size: 24px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 1.4vw;
+        font-weight: bolder;
+        border: 0.5vw solid #005C46;
+        z-index: = 1;
+        animation: backInLeft normal forwards ease-in-out;
+        animation-delay: 1.5s;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+
+      .buttons:hover {
+        transition: all 0.3s ease-in;
+        background-color: #008264;
+        color: white;
+      }
+
+
+      .button1 {
+        left: 13.1%;
+        top: 69%;
+      }
+
+      .button2 {
+        left: 23.1%;
+        top: 69%;
+      }
+
+      .title {
+        top: 7%;
+        left: 40.2%;
+        position: absolute;
+        color: #FFD700;
+        font-size: 8vw;
+        text-align: center;
+        text-shadow: 0.4vw 0.2vw #005C46;
+        animation: backInDown;
+        animation-duration: 1s;
+      }
+
+      .subtitle {
+        animation-delay: 0.5;
+        top: 24%;
+        left: 41.1%;
+        padding: 5px;
+        position: absolute;
+        color: #FFD700;
+        font-size: 2vw;
+        text-align: center;
+        text-shadow: 0.2vw 0.2vw #005C46;
+        animation: backInDown;
+        animation-delay: 0.5s;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+
+      .projects {
+        top: 54%;
+        left: 13%;
+        position: absolute;
+        color: #FFD700;
+        font-size: 4.5vw;
+        text-align: center;
+        text-shadow: 0.2vw 0.2vw #005C46;
+        animation: backInLeft;
+        animation-delay: 1.5s;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+
+      .connect {
+        left: 67.2%;
+        top: 54%;
+        position: absolute;
+        color: #FFD700;
+        font-size: 4.5vw;
+        text-align: center;
+        text-shadow: 0.2vw 0.2vw #005C46;
+        animation: backInRight;
+        animation-delay: 1.5s;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+
+      .shape {
+        height: 8%;
+        width: 24%;
+        position: absolute;
+        background-color: #005C46;
+        left: 64.6%;
+        top: 69%;
+        z-index: 1;
+        animation: backInRight normal forwards ease-in-out;
+        animation-delay: 1.5s;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+
+      .gitlogo {
+        height: 95%;
+        width: auto;
+        position: absolute;
+        top: 4%;
+        left: 6%;
+      }
+
+      .gitlogo:hover {
+        animation: rubberBand;
+        animation-duration: 1s;
+      }
+
+      .disclogo {
+        height: 80%;
+        width: auto;
+        position: absolute;
+        left: 30%;
+        top: 12%;
+      }
+
+      .disclogo:hover {
+        animation: rubberBand;
+        animation-duration: 1s;
+      }
+
+      .youlogo {
+        top: 20.5%;
+        height: 60%;
+        width: auto;
+        position: absolute;
+        left: 54%;
+      }
+
+      .youlogo:hover {
+        animation: rubberBand;
+        animation-duration: 1s;
+      }
+
+      .maillogo {
+        left: 76%;
+        position: absolute;
+        height: 100%;
+        width: 18%;
+      }
+
+      .maillogo:hover {
+        animation: rubberBand;
+        animation-duration: 1s;
+      }
+    </style>
+
+  </head>
+
+    <body class="background">
+      <div>
+        <div style=" z-index: 1; transform: rotate(63deg); top: -35.2%; left: 77.3%; width: 0.5%; height:120%; position: absolute; text-align: center; background-color: #005C46;"></div>
+        <div style=" z-index: 1; transform: rotate(117deg); top: -35.2%; left: 22.1%; width: 0.5%; height:120%; position: absolute; text-align: center; background-color: #005C46;"></div>
+        <div style=" z-index: 1; height:50%; top:51%; left: 49.7%; width: 0.5%; position: absolute; text-align:cetner; background-color: #005C46;"></div>
+      <div>
+          <img src="images/yellowbirdlogo.png" class="logo" style="width:10%">
+      </div>
+      <div>
+        <h1 class="title"><strong>Wake</strong></h1>
+        <h2 class="subtitle"><strong>Learn by Doing</br>Do by Learning</strong></h2>
+        <h3 class="projects"><strong>Explore</strong></h3>
+        <h3 class="connect"><strong>Connect</strong></h3>
+        <div class="shape">
+          <ul>
+            <li>
+              <a href="https://github.com/Wake-GitHub" target="_blank">
+                <img src="images/githublogo.png" class="gitlogo">
+              </a>
+              <a href="https://discord.gg/EhZHkvarrP" target="_blank">
+                <img src="images/discordlogo.png" class="disclogo">
+              </a>
+              <a href="https://www.youtube.com/channel/UCXqqBdKrOJtPfEWRWaTbSAw" target="_blank">
+                <img src="images/youtubelogo.png" class="youlogo">
+              </a>
+              <a href="mailto:ReachWake@gmail@@com" target="_blank"
+                onmouseover="this.href=this.href.replace('@@','.')">
+                <img src="images/emailicon.png" class="maillogo">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="projects.html" class="button1 buttons">Projects</a>
+        <a href="about.html" class="button2 buttons">About</a>
+      </div>
+    </div>
+
+
+    </body>
+  </html>

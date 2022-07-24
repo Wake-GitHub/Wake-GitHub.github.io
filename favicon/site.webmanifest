@@ -1,0 +1,14 @@
+{
+    "name": "Wake",
+    "short_name": "Wake",
+    "icons": [
+        {
+            "src": "/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffd700",
+    "background_color": "#ffd700",
+    "display": "standalone"
+}
